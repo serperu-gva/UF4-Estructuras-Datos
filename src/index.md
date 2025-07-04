@@ -1,4 +1,4 @@
-# UF01. Fonaments de Programació
+# UF05. Vectors
 
 ::: tip Informació del curs
 **Professors:** Guillermo Garrido Portes / David Tur Sanmateu
@@ -11,9 +11,8 @@
 
 :::
 
-
-::: info Benvinguts al Curs
-Aquest curs està dissenyat per introduir-vos als fonaments essencials de la programació. Aprendreu els conceptes bàsics, les metodologies i les eines necessàries per començar la vostra trajectòria en el món del desenvolupament de programari.
+::: info Síntesi de la unitat
+Aquesta unitat se centra en l'estudi de les estructures de dades bàsiques com els vectors i les matrius. Aprendreu com declarar-les, accedir-hi, modificar-les i aplicar operacions freqüents com la cerca i l’ordenació. Aquestes eines són essencials per gestionar col·leccions d’informació de manera eficient dins dels vostres programes.
 :::
 
 ## Continguts del Curs {.animate-title}
