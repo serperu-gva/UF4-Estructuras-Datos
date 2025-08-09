@@ -7,7 +7,7 @@ export default withMermaid({
   lang: 'ca-ES',
   title: 'UF5_1',
   description: 'Descripció',
-  base: '/UF5_2/',
+  base: '/UF5_1/',
   outDir: '../docs',
   markdown: {
     config(md) {
