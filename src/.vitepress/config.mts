@@ -19,7 +19,7 @@ export default ({
       title: 'UF5.1 - Estructuras de Datos Dinámicas I',
       description: 'Unidad 5 donde se introducen las estructuras de datos dinámicas.',
       themeConfig: {
-        siteTitle: 'Estructuras de Datos Dinámicas I',
+        siteTitle: 'Estructuras de </br>Datos Dinámicas I',
         outline: { label: 'En esta página' },
           docFooter: { prev: 'Anterior', next: 'Siguiente' },
           nav: [
@@ -46,22 +46,22 @@ export default ({
       title: 'U5.1 - Estrucutures de Dades Dinàmiques I',
       description: 'Unitat 5.1 on s\'introduïxen les estructures de dades dinàmiques.',
       themeConfig: {
-        siteTitle: 'Introducció a la Programació II',
+        siteTitle: 'Estrucutures de </br>Dades Dinàmiques I',
         outline: { label: 'En aquesta pàgina' },
           docFooter: { prev: 'Anterior', next: 'Següent' },
           nav: [
             { text: '🏠 Inici', link: '/ca/index' },
             { text: '📚 Continguts', items: [
-              { text: '1. Introducció', link: '/1-introduccio' },
-              { text: '2. Propietats', link: '/2-propietats' },
-              { text: '3. Vectors (arrays unidimensionals)', link: '/3-vectors' },
-              { text: "4. Matrius (arrays multidimensionals)", link: '/4-matrius' },
-              { text: "5. La classe Arrays", link: '/5-classe_arrays' },
-              { text: '6. La classe String', link: '/6-classe_string' },
-              { text: '7. Cercar amb vectors', link: '/7-cercar' },
-              { text: '8. Ordenació de vectors', link: '/8-ordenar' },
-              { text: '💡Exemples', link: '/9-exemples' },
-              { text: '✏️Exercicis', link: '/10-exercicis' },
+              { text: '1. Introducció', link: '/ca/1-introduccio' },
+              { text: '2. Propietats', link: '/ca/2-propietats' },
+              { text: '3. Vectors (arrays unidimensionals)', link: '/ca/3-vectors' },
+              { text: "4. Matrius (arrays multidimensionals)", link: '/ca/4-matrius' },
+              { text: "5. La classe Arrays", link: '/ca/5-classe_arrays' },
+              { text: '6. La classe String', link: '/ca/6-classe_string' },
+              { text: '7. Cercar amb vectors', link: '/ca/7-cercar' },
+              { text: '8. Ordenació de vectors', link: '/ca/8-ordenar' },
+              { text: '💡Exemples', link: '/ca/9-exemples' },
+              { text: '✏️Exercicis', link: '/ca/10-exercicis' },
             ]}
           ]
       }
@@ -89,23 +89,27 @@ export default ({
         ]},
         { text: '📚 Contenidos adicionales', items: [
           { text: 'For en formato foreach', link: '/11-add_foreach' },
+          { text: '<img src="img/logo-gva.png" class="logo-anim" style="vertical-align:middle; height:150px; margin-top:100px;">', link: '' },
+          { text: '<img src="img/logo-centro.png" class="logo-anim" style="vertical-align:middle; height:150px;">', link: '' }
         ]}      
       ],
       '/ca/': [
         { text: '📚 Continguts', items: [
-          { text: '1. Introducció', link: '/1-introduccio' },
-          { text: '2. Propietats', link: '/2-propietats' },
-          { text: '3. Vectors (arrays unidimensionals)', link: '/3-vectors' },
-          { text: "4. Matrius (arrays multidimensionals)", link: '/4-matrius' },
-          { text: "5. La classe Arrays", link: '/5-classe_arrays' },
-          { text: '6. La classe String', link: '/6-classe_string' },
-          { text: '7. Cercar amb vectors', link: '/7-cercar' },
-          { text: '8. Ordenació de vectors', link: '/8-ordenar' },
-          { text: '💡Exemples', link: '/9-exemples' },
-          { text: '✏️Exercicis', link: '/10-exercicis' },
+          { text: '1. Introducció', link: '/ca/1-introduccio' },
+          { text: '2. Propietats', link: '/ca/2-propietats' },
+          { text: '3. Vectors (arrays unidimensionals)', link: '/ca/3-vectors' },
+          { text: "4. Matrius (arrays multidimensionals)", link: '/ca/4-matrius' },
+          { text: "5. La classe Arrays", link: '/ca/5-classe_arrays' },
+          { text: '6. La classe String', link: '/ca/6-classe_string' },
+          { text: '7. Cercar amb vectors', link: '/ca/7-cercar' },
+          { text: '8. Ordenació de vectors', link: '/ca/8-ordenar' },
+          { text: '💡Exemples', link: '/ca/9-exemples' },
+          { text: '✏️Exercicis', link: '/ca/10-exercicis' },
         ]},
         { text: '📚 Continguts addicionals', items: [
-          { text: 'For en format foreach', link: '/11-add_foreach' },
+          { text: 'For en format foreach', link: '/ca/11-add_foreach' },
+          { text: '<img src="../img/logo-gva.png" class="logo-anim" style="vertical-align:middle; height:150px; margin-top:100px;">', link: '' },
+          { text: '<img src="../img/logo-centro.png" class="logo-anim" style="vertical-align:middle; height:150px;">', link: '' }
         ]}
       ]
     },

@@ -21,23 +21,20 @@ Aquesta unitat se centra en l'estudi de les estructures de dades bàsiques com e
 
 Aquest tema aborda els conceptes pràctics i sintàctics d'un llenguatge de programació específic, que són la base per a escriure codi funcional.
 
-- Objectiu 3.5: Identificar els diferents tipus de dades i saber quan utilitzar-los.
-- Objectiu 3.6: Declarar i utilitzar variables i literals per a emmagatzemar dades.
-- Objectiu 3.7: Emprar operadors aritmètics, lògics i de comparació en expressions.
-- Objectiu 3.8: Implementar l'entrada i eixida de dades a través de la consola.
-- Objectiu 3.9: Escriure codi amb estructures de control alternatives (condicionals).
+- Objectiu 5.1: Declarar i manipular **vectors** (arrays unidimensionals) per a emmagatzemar i accedir a dades de forma seqüencial.
+- Objectiu 5.2: Utilitzar **matrius** (arrays multidimensionals) per a organitzar dades en dues o més dimensions.
+- Objectiu 5.3: Aplicar mètodes de llibreries de classe per a realitzar operacions comunes com la cerca i l'ordenació.
+- Objectiu 5.4: Gestionar i manipular cadenes de text utilitzant llibreries de classe.
+- Objectiu 5.5: Emprar el bucle **`foreach`** per a recórrer de manera eficient els elements de vectors i matrius.
+- Objectiu 5.6: Utilitzar les capacitats d'entrada/eixida del llenguatge per a interactuar amb l'usuari i processar dades.
 
 ---
 
 | Criteri d'Avaluació | Objectius Didàctics |
 | :--- | :--- |
-| **RA1-a**. S'han identificat els blocs que componen l'estructura d'un programa informàtic. | **Objectiu 3.2** |
-| **RA1-d**. S'han identificat els diferents tipus de variables i la utilitat específica de cadascun. | **Objectiu 3.5, Objectiu 3.6** |
-| **RA1-e**. S'ha modificat el codi d'un programa per a crear i utilitzar variables. | **Objectiu 3.6** |
-| **RA1-f**. S'han creat i utilitzat constants i literals. | **Objectiu 3.6** |
-| **RA1-g**. S'han classificat, reconegut i utilitzat en expressions els operadors del llenguatge. | **Objectiu 3.7** |
-| **RA1-h**. S'ha comprovat el funcionament de les conversions de tipus explícites i implícites. | **Objectiu 3.6** |
-| **RA1-i**. S'han introduït comentaris en el codi. | **Objectiu 3.5** |
+| **RA05-c**. S'han reconegut les possibilitats d'entrada/eixida del llenguatge i les llibreries associades. | **Objectiu 5.6** |
+| **RA06-a**. S'han escrit programes que utilitzen matrius (arrays). | **Objectiu 5.1, Objectiu 5.2** |
+| **RA06-b**. S'han reconegut les llibreries de classes relacionades amb tipus de dades avançats. | **Objectiu 5.3, Objectiu 5.4** |
 
 :::
 
