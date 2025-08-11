@@ -1,13 +1,7 @@
-# 8. Ordenació de vectors
+# Aviso de traducción
 
-Existeixen diferents algoritmes per a ordenar un vector. Alguns exemples són:
+::: warning Aviso de traducción
+Estamos trabajando para ofrecer la versión en español con el nivel y la calidad que os merecéis. Este módulo fue impartido originalmente en valenciano en el centro docente y lo estamos adaptando progresivamente. Gracias por tu paciencia.
+:::
 
-- Bubble sort
-- Insertion sort
-- Selection sort
-- Quicksort (el més ràpid dels quatre)
-
-No és necessari saber com funcionen aquests algoritmes per a poder ordenar, ja que la majoria de llenguatges de programació modernes ja inclouen funcions o mètodes d'ordenació preparats per a utilitzar-los fàcilment (com per exemple `sort()` en moltes biblioteques estàndard).
-
-De totes maneres és un tema fascinant. Qui tinga interés pot trobar l'explicació i el codi en diferents llenguatges en la següent pàgina web:  
-https://en.wikibooks.org/wiki/algorithm_implementation/sorting
+<a href="/UD5_1/ca/index" style="display:inline-block;padding:0.4em 0.8em;border-radius:6px;background:#3e63dd;color:white;text-decoration:none;margin:4px 0;">Ver contenido en valenciano →</a>

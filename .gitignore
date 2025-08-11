@@ -25,3 +25,4 @@ src/.vitepress/cache/
 *.njsproj
 *.sln
 *.sw?
+*:Zone.Identifier

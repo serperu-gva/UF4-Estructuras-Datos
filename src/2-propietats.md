@@ -1,10 +1,7 @@
-# 2. Propietats
+# Aviso de traducción
 
-Algunes propietats dels vectors són:
+::: warning Aviso de traducción
+Estamos trabajando para ofrecer la versión en español con el nivel y la calidad que os merecéis. Este módulo fue impartido originalmente en valenciano en el centro docente y lo estamos adaptando progresivamente. Gracias por tu paciencia.
+:::
 
-- Els vectors s'utilitzen com a contenidors per a emmagatzemar dades relacionades (en lloc de declarar variables per separat per a cadascun dels elements del vector).
-- Totes les dades incloses en el vector són del mateix tipus. Es poden crear vectors d'enters, o vectors de reals, però en un mateix vector no es poden mesclar tipus de dades (enters i reals).
-- La grandària del vector s'estableix quan es crea el vector (amb l'operador new, igual que qualsevol altre objecte).
-- Als elements del vector s'accedirà a través de la posició que ocupen dins del conjunt d'elements del vector.
-- El terme 'vector' normalment fa referència a aquells que són unidimensionals.
-- Els vectors bidimensionals es coneixen amb el nom de matrius.
+<a href="/UD5_1/ca/index" style="display:inline-block;padding:0.4em 0.8em;border-radius:6px;background:#3e63dd;color:white;text-decoration:none;margin:4px 0;">Ver contenido en valenciano →</a>

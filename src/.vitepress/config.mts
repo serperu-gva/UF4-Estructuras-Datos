@@ -1,12 +1,6 @@
-//import { defineConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
-import { withMermaid } from "vitepress-plugin-mermaid";
 
-// https://vitepress.dev/reference/site-config
-export default withMermaid({
-  lang: 'ca-ES',
-  title: 'UF5_1',
-  description: 'Descripció',
+export default ({
   base: '/UF5_1/',
   outDir: '../docs',
   markdown: {
@@ -14,46 +8,91 @@ export default withMermaid({
       md.use(tabsMarkdownPlugin)
     }
   },
-  mermaid: {
-    // refer https://mermaid.js.org/config/setup/modules/mermaidAPI.html#mermaidapi-configuration-defaults for options
-  },
-  mermaidPlugin: {
-    class: "mermaid my-class", // set additional css classes for parent container 
-  },
   head: [
-    //['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
-    //['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
-    //['link', { href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap', rel: 'stylesheet' }],
-    //['link', { rel: 'icon', type: 'image/png', href: '/img/logo.png' }]
+  ['link', { rel: 'icon', href: '/img/logo.png' }],
   ],
+  locales: {
+    root: {
+      label: 'Español',
+      lang: 'es-ES',
+      link: '/',
+      title: 'UF5.1 - Estructuras de Datos Dinámicas I',
+      description: 'Unidad 5 donde se introducen las estructuras de datos dinámicas.',
+      themeConfig: {
+        siteTitle: 'Estructuras de Datos Dinámicas I',
+        outline: { label: 'En esta página' },
+          docFooter: { prev: 'Anterior', next: 'Siguiente' },
+          nav: [
+            { text: '🏠 Inicio', link: '/' },
+            { text: '📚 Contenidos', items: [
+              { text: '1. Introducción', link: '/1-introduccio' },
+              { text: '2. Propiedades', link: '/2-propietats' },
+              { text: '3. Vectores (arrays unidimensionales)', link: '/3-vectors' },
+              { text: "4. Matrices (arrays multidimensionales)", link: '/4-matrius' },
+              { text: "5. La clase Arrays", link: '/5-classe_arrays' },
+              { text: '6. La clase String', link: '/6-classe_string' },
+              { text: '7. Buscar con vectores', link: '/7-cercar' },
+              { text: '8. Ordenación de vectores', link: '/8-ordenar' },
+              { text: '💡Ejemplos', link: '/9-exemples' },
+              { text: '✏️Ejercicios', link: '/10-exercicis' },
+            ]}
+          ]
+      }
+    },
+    ca: {
+      label: 'Valencià',
+      lang: 'ca-ES',
+      link: '/ca/',
+      title: 'U5.1 - Estrucutures de Dades Dinàmiques I',
+      description: 'Unitat 5.1 on s\'introduïxen les estructures de dades dinàmiques.',
+      themeConfig: {
+        siteTitle: 'Introducció a la Programació II',
+        outline: { label: 'En aquesta pàgina' },
+          docFooter: { prev: 'Anterior', next: 'Següent' },
+          nav: [
+            { text: '🏠 Inici', link: '/ca/index' },
+            { text: '📚 Continguts', items: [
+              { text: '1. Introducció', link: '/1-introduccio' },
+              { text: '2. Propietats', link: '/2-propietats' },
+              { text: '3. Vectors (arrays unidimensionals)', link: '/3-vectors' },
+              { text: "4. Matrius (arrays multidimensionals)", link: '/4-matrius' },
+              { text: "5. La classe Arrays", link: '/5-classe_arrays' },
+              { text: '6. La classe String', link: '/6-classe_string' },
+              { text: '7. Cercar amb vectors', link: '/7-cercar' },
+              { text: '8. Ordenació de vectors', link: '/8-ordenar' },
+              { text: '💡Exemples', link: '/9-exemples' },
+              { text: '✏️Exercicis', link: '/10-exercicis' },
+            ]}
+          ]
+      }
+    }
+  },
+  // Tema por idioma
   themeConfig: {
-    siteTitle: 'Vectors',
     logo: '/img/logo.png',
-    nav: [
-      { text: '🏠 Inici', link: '/' },
-      { text: '📋 Objectius', link: '/objectius' },
-      { text: '📚 Continguts', items: [
-        { text: '1. Introducció', link: '/1-introduccio' },
-        { text: '2. Propietats', link: '/2-propietats' },
-        { text: '3. Vectors (arrays unidimensionals)', link: '/3-vectors' },
-        { text: "4. Matrius (arrays multidimensionals)", link: '/4-matrius' },
-        { text: "5. La classe Arrays", link: '/5-classe_arrays' },
-        { text: '6. La classe String', link: '/6-classe_string' },
-        { text: '7. Cercar amb vectors', link: '/7-cercar' },
-        { text: '8. Ordenació de vectors', link: '/8-ordenar' },
-        { text: "9. La classe HashMap (Arrays associatius)", link: '/9-hashmap' },
-        { text: "10. La classe ArrayList (Arrays redimensionables)", link: '/10-arraylist' },
-        { text: 'Exemples', link: '/11-exemples' },
-        { text: 'Exercicis', link: '/12-exercicis' },
-      ]},
-      { text: '📚 Continguts addicionals', items: [
-        { text: 'For en format foreach', link: '/13-add_foreach' },
-      ]}
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/GGEdu' }
     ],
-    sidebar: [
-      {
-        text: '📚 Continguts',
-        items: [
+    sidebar: {
+      '/': [
+        { text: '📚 Contenidos', items: [
+          { text: '1. Introducción', link: '/1-introduccio' },
+          { text: '2. Propiedades', link: '/2-propietats' },
+          { text: '3. Vectores (arrays unidimensionales)', link: '/3-vectors' },
+          { text: "4. Matrices (arrays multidimensionales)", link: '/4-matrius' },
+          { text: "5. La clase Arrays", link: '/5-classe_arrays' },
+          { text: '6. La clase String', link: '/6-classe_string' },
+          { text: '7. Buscar con vectores', link: '/7-cercar' },
+          { text: '8. Ordenación de vectores', link: '/8-ordenar' },
+          { text: '💡Ejemplos', link: '/9-exemples' },
+          { text: '✏️Ejercicios', link: '/10-exercicis' },
+        ]},
+        { text: '📚 Contenidos adicionales', items: [
+          { text: 'For en formato foreach', link: '/11-add_foreach' },
+        ]}      
+      ],
+      '/ca/': [
+        { text: '📚 Continguts', items: [
           { text: '1. Introducció', link: '/1-introduccio' },
           { text: '2. Propietats', link: '/2-propietats' },
           { text: '3. Vectors (arrays unidimensionals)', link: '/3-vectors' },
@@ -62,31 +101,17 @@ export default withMermaid({
           { text: '6. La classe String', link: '/6-classe_string' },
           { text: '7. Cercar amb vectors', link: '/7-cercar' },
           { text: '8. Ordenació de vectors', link: '/8-ordenar' },
-          { text: "9. La classe HashMap (Arrays associatius)", link: '/9-hashmap' },
-          { text: "10. La classe ArrayList (Arrays redimensionables)", link: '/10-arraylist' },
-          { text: 'Exemples', link: '/11-exemples' },
-          { text: 'Exercicis', link: '/12-exercicis' },
-        ]
-      },
-      { text: '📚 Continguts addicionals', items: [
-        { text: 'For en format foreach', link: '/13-add_foreach' },
-        { text: '<img src="img/logo-gva.png" class="logo-anim" style="vertical-align:middle; height:150px; margin-top:100px;">', link: '' },
-        { text: '<img src="img/logo-centro.png" class="logo-anim" style="vertical-align:middle; height:150px;">', link: '' }
-      ]}
-    ],
-    socialLinks: [
-      { icon: 'github', link: '' }
-    ],
+          { text: '💡Exemples', link: '/9-exemples' },
+          { text: '✏️Exercicis', link: '/10-exercicis' },
+        ]},
+        { text: '📚 Continguts addicionals', items: [
+          { text: 'For en format foreach', link: '/11-add_foreach' },
+        ]}
+      ]
+    },
     footer: {
-      message: "CEEDCV - Centre Específic d'Educació a Distància de la Comunitat Valenciana",
-      copyright: 'Copyright © 2024-2025'
-    },
-    outline: {
-      label: 'En aquesta pàgina'
-    },
-    docFooter: {
-      prev: 'Anterior',
-      next: 'Següent'
+      message: '<img src="/img/logo-autor.png" alt="Autor Principal" style="height:60px; margin: 0 auto; display:block;" />',
+      copyright: 'Copyright © 2025'
     }
   }
 })
