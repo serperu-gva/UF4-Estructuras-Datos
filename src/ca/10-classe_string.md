@@ -1,4 +1,4 @@
-# 10. La classe String (Java)
+# La classe String (Java)
 
 Les cadenes de text són objectes especials. Els textos han de manejar-se creant objectes de tipus String.
 
@@ -36,7 +36,7 @@ String cadena = new String(paraula);
 
 :::
 
-## 10.1. Comparació
+## Comparació
 
 **IMPORTANT**: Els objectes String NO poden comparar-se directament amb els operadors de comparació `==` com les variables simples.
 
@@ -51,7 +51,7 @@ Són funcions que posseeixen los propis objectes de tipus String. Per a utilitza
 
 `objecteString.mètode(arguments);`
 
-## 10.2. Mètodes de la classe String
+## Mètodes de la classe String
 
 Alguns dels mètodes més utilitzats són:
 
@@ -254,7 +254,7 @@ System.out.println(String.format("%.2f", number)); // Mostra el número amb dos 
 
 :::
 
-- **matches**: Examina l'expressió regular que rep com a paràmetre (en forma de String ) i retorna `true` si el text que examina compleix l'expressió regular Una expressió regular és una expressió textual que utilitza símbols especials per a fer cerques avançades. 
+- **matches**: Examina l'expressió regular que rep com a paràmetre (en forma de String ) i retorna `true` si el text que examina compleix l'expressió regular Una expressió regular és una expressió textual que utilitza símbols especials per a fer cerques avançades.
   
   Les expressions regulars poden contindre:
   - Caràcters. Com a, s, ñ,… i els interpreta tal qual. Si una expressió regular continguera només un caràcter, matches retornaria `true` si el text conté només aqueix caràcter. Si conté més d'un, obliga a que el text tinga exactament aqueixos caràcters.
