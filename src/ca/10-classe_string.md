@@ -1,4 +1,4 @@
-# 6. La classe String (Java)
+# 10. La classe String (Java)
 
 Les cadenes de text són objectes especials. Els textos han de manejar-se creant objectes de tipus String.
 
@@ -36,7 +36,7 @@ String cadena = new String(paraula);
 
 :::
 
-## 6.1. Comparació
+## 10.1. Comparació
 
 **IMPORTANT**: Els objectes String NO poden comparar-se directament amb els operadors de comparació `==` com les variables simples.
 
@@ -51,7 +51,7 @@ Són funcions que posseeixen los propis objectes de tipus String. Per a utilitza
 
 `objecteString.mètode(arguments);`
 
-## 6.2. Mètodes de la classe String
+## 10.2. Mètodes de la classe String
 
 Alguns dels mètodes més utilitzats són:
 

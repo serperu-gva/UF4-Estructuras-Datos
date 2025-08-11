@@ -1,4 +1,4 @@
-# 5. La classe Arrays (Java)
+# 9. La classe Arrays (Java)
 
 En el paquet `java.utils` es troba una classe estàtica anomenada **Arrays**. Aquesta classe estàtica permet ser utilitzada com si fora un objecte (com ocorre amb Math). Aquesta classe posseeix **mètodes** molt interessants per a utilitzar sobre arrays.
 

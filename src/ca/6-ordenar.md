@@ -1,4 +1,4 @@
-# 8. Ordenació de vectors
+# 6. Ordenació de vectors
 
 Existeixen diferents algoritmes per a ordenar un vector. Alguns exemples són:
 

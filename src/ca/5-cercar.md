@@ -1,8 +1,8 @@
-# 7. Cercar amb vectors
+# 5. Cercar amb vectors
 
 Existeixen dues maneres de buscar un element dins d'un vector: la cerca seqüencial i la cerca dicotòmica o binària.
 
-## 7.1. Cerca seqüencial
+## 5.1. Cerca seqüencial
 
 La cerca seqüencial és la més fàcil de les dues, ja que consisteix a comparar els elements del vector amb l'element a buscar.
 
@@ -24,7 +24,7 @@ public static int busquedaSequencial(int[] v, int element){
 
 :::
 
-## 7.2. Cerca dicotòmica o binària
+## 5.2. Cerca dicotòmica o binària
 
 En aquest cas el vector ha d'estar ordenat. Es dividirà en dos per a buscar l'element en una part del vector o en una altra i així successivament fins a trobar, o no, l'element.
 
