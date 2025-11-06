@@ -1,24 +1,22 @@
 # Solucions UF05. Estructures de Dades Dinàmiques I
 
-::: Avís important
-    dasfd
-:::    
->IMPORTANT: 
+
 <div style="
   border-left: 4px solid #ffcccb;
   background-color: #fff0f5;
   padding: 12px 16px;
   border-radius: 6px;
   margin: 1em 0;
-  color: #b03060;
-">
+  color: #b03060;">
   ⚠️ <strong>Atenció:</strong> Després d’un nextInt(), el Scanner no consumeix el salt de línia (\n) que queda quan prems Enter.
 Això fa que el següent nextLine() llegisca directament una línia buida.
+
+
+🧠 Solució:
+Després de cada nextInt() has d’afegir una línia per "buidar" el Scanner:
+
 </div>
 
-🧠 Solució
-
-Després de cada nextInt() has d’afegir una línia per "buidar" el Scanner:
 
 ##### Exercicis - Vectors
 
