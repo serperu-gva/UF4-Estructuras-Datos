@@ -424,3 +424,392 @@ d) Si has iniciat correctament la sessió, mostra un menú amb dos opcions: una 
         }
     }
 ```
+
+##### Exercicis - String
+
+# 🧠 Exercici S1
+
+## 📋 Enunciat
+
+Una aplicació web vol validar contrasenyes segons certes normes abans de registrar-les. Un valor numèric indicarà la fiabilitat de la contrasenya:
+
+- Valor de 0 indica contrasenya molt segura.
+- Per cada comprovació que no supere, augmentarà en 1.
+
+a) Demana a l'usuari una contrasenya. Indica si la longitud és superior o inferior a 8 caràcters.  
+b) Indica si conté, almenys, una majúscula.  
+c) Indica si conté, almenys, un dígit.  
+d) Indica el nivell de seguretat, mostrant el missatge "Molt segura!", "Segura" o "Molt insegura. Canvia-la!" segons les comprovacions superades.
+
+**NOTA:**  
+Una forma de comprovar si un caràcter és una lletra majúscula és amb la següent instrucció:  
+`Character.isUpperCase(cadena.charAt(i))`  
+De forma equivalent, es pot comprovar que un caràcter és un número amb:  
+`Character.isDigit(cadena.charAt(i))`
+
+## 🛠️ Solució proposada
+
+Comprovem la contrasenya pas a pas i incrementem un comptador d'errors. Finalment, mostrem el nivell de seguretat segons el valor del comptador.
+
+## 📦 Codi Java
+
+```java
+public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Introdueix una contrasenya: ");
+        String password = sc.nextLine();
+
+        int nivell = 0;
+
+        if (password.length() < 8) {
+            System.out.println("La contrasenya té menys de 8 caràcters.");
+            nivell++;
+        } else {
+            System.out.println("La contrasenya té 8 caràcters o més.");
+        }
+
+        boolean majuscula = false;
+        boolean digit = false;
+
+        for (int i = 0; i < password.length(); i++) {
+            if (Character.isUpperCase(password.charAt(i))) {
+                majuscula = true;
+            }
+            if (Character.isDigit(password.charAt(i))) {
+                digit = true;
+            }
+        }
+
+        if (!majuscula) {
+            System.out.println("No conté cap lletra majúscula.");
+            nivell++;
+        } else {
+            System.out.println("Conté almenys una lletra majúscula.");
+        }
+
+        if (!digit) {
+            System.out.println("No conté cap dígit.");
+            nivell++;
+        } else {
+            System.out.println("Conté almenys un dígit.");
+        }
+
+        if (nivell == 0) {
+            System.out.println("Molt segura!");
+        } else if (nivell == 1) {
+            System.out.println("Segura");
+        } else {
+            System.out.println("Molt insegura. Canvia-la!");
+        }
+
+        sc.close();
+    }
+```
+
+# 🧠 Exercici S2
+
+## 📋 Enunciat
+
+En una carpeta hi ha diversos noms de fitxer. Cal analitzar-los per identificar els seus tipus i validar els noms.
+
+## Exercicis
+
+**a)** Desa 8 noms de fitxer (amb extensió) en un vector de `String`. Mostra'ls.
+
+**b)** Mostra aquells que no tenen extensió.
+
+**c)** Mostra aquells noms que acaben en `.txt`.
+
+**d)** Mostra quins noms contenen espais.
+
+**e)** Canvia tots els noms perquè estiguen en minúscules.
+
+**f)** Mostra només els noms dels fitxers sense l'extensió.
+
+
+## 🛠️ Solució proposada
+> 💡 En aquest exercici utilitzem el bucle `foreach` per recórrer els vectors, però es podria fer igualment amb un bucle `for` clàssic amb índex si es vol més control sobre les posicions.
+> 
+> 💡 S'utilitzen mètodes com `.contains()`, `.endsWith()`, `.toLowerCase()` i `.substring()` per fer les comprovacions i transformacions.
+
+## 📦 Codi Java
+
+```java
+public static void main(String[] args){
+
+    String[] fitxers = {
+        "document.txt", "foto.jpg", "arxiu", "notes.txt",
+        "presentació.ppt", "resum.docx", "fitxer sense extensió", "exemple.TXT"
+    };
+
+    System.out.println("TOTS ELS FITXERS");
+    System.out.println("────────────────────────────");
+    for (String f : fitxers) {
+        System.out.println("• " + f);
+    }
+
+    System.out.println("\nFITXERS SENSE EXTENSIÓ");
+    System.out.println("────────────────────────────");
+    for (String f : fitxers) {
+        if (!f.contains(".")) {
+            System.out.println("• " + f);
+        }
+    }
+
+    System.out.println("\nFITXERS .TXT");
+    System.out.println("────────────────────────────");
+    for (String f : fitxers) {
+        if (f.toLowerCase().endsWith(".txt")) {
+            System.out.println("• " + f);
+        }
+    }
+
+    System.out.println("\nFITXERS AMB ESPAIS");
+    System.out.println("────────────────────────────");
+    for (String f : fitxers) {
+        if (f.contains(" ")) {
+            System.out.println("• " + f);
+        }
+    }
+
+    System.out.println("\nFITXERS EN MINÚSCULES");
+    System.out.println("────────────────────────────");
+    for (String f : fitxers) {
+        System.out.println("• " + f.toLowerCase());
+    }
+
+    System.out.println("\nNOMS SENSE EXTENSIÓ");
+    System.out.println("────────────────────────────");
+    for (String f : fitxers) {
+        int punt = f.lastIndexOf(".");
+        if (punt != -1) {
+            System.out.println("• " + f.substring(0, punt));
+        } else {
+            System.out.println("• " + f);
+        }
+    }
+}
+```
+
+# 🧠 Exercici S3
+
+## 📋 Enunciat
+
+Es volen fer una sèrie de comprovacions en una frase. Realitza-les i mostra el resultat.
+
+a) Introdueix una frase i desa-la.  
+b) Indica si comença per majúscula i acaba per punt. Si no és el cas, modifica la cadena.  
+c) Mostra la longitud de la frase i quantes paraules conté.  
+d) Substitueix totes les aparicions de la paraula "Java" per "Python".  
+e) Mostra la frase final.
+
+## 🛠️ Solució proposada
+
+S'utilitzen mètodes com `.charAt()`, `.endsWith()`, `.length()`, `.split()` i `.replace()` per fer les comprovacions i modificacions.
+
+## 📦 Codi Java
+
+```java
+import java.util.Scanner;
+
+     public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Introdueix una frase que continga una o varies ocurrències de la paraula Java: ");
+        String frase = sc.nextLine();
+
+        // b) Comprovar majúscula inicial i punt final
+        if (!Character.isUpperCase(frase.charAt(0))) {
+            frase = Character.toUpperCase(frase.charAt(0)) + frase.substring(1);
+        }
+
+        if (!frase.endsWith(".")) {
+            frase += ".";
+        }
+
+        // c) Longitud i nombre de paraules
+        int longitud = frase.length();
+        int paraules = frase.split(" ").length;
+
+        // d) Substituir "Java" per "Python"
+        frase = frase.replace("Java", "Python");
+
+        // e) Mostrar resultats
+        System.out.println("Frase final: " + frase);
+        System.out.println("Longitud: " + longitud);
+        System.out.println("Número de paraules: " + paraules);
+
+        sc.close();
+
+    }
+```
+# 🧠 Exercici S4
+
+## 📋 Enunciat
+
+Una aplicació ha rebut una llista de correus electrònics que cal validar i analitzar.
+
+## Exercicis
+
+**a)** Desa 5 correus en un vector de `String`. Mostra'ls.
+
+**b)** Mostra quins contenen el símbol `@` i acaben en `.com` o `.es`.
+
+**c)** Mostra el domini de cada correu (utilitzant `substring` i `indexOf`).
+
+
+## 🛠️ Solució proposada
+
+**a)** Utilitza un bucle for-each per imprimir cada correu.
+
+**b)** Per filtrar els correus vàlids pots usar: ots usar `contains("@")` i `endsWith(".com") || endsWith(".es")`.
+
+**c)** Si el correu no conté @, mostra un missatge indicant que no té un domini vàlid.
+
+## 📦 Codi Java
+
+```java
+  public static void main(String[] args) {
+
+        String[] correus = {
+            "usuari1@gmail.com", "exemple@empresa.es", "correu@domini.org",
+            "invalidacorreo.com", "prova@xarxa.net"
+        };
+
+        System.out.println("Tots els correus:");
+        System.out.println("────────────────────────────");
+        for (String c : correus) {
+            System.out.println("• " + c);
+        }
+
+        System.out.println("\nCorreus vàlids (.com o .es):");
+        System.out.println("────────────────────────────");
+        for (String c : correus) {
+            if (c.contains("@") && (c.endsWith(".com") || c.endsWith(".es"))) {
+                System.out.println("• " + c);
+            }
+        }
+
+        System.out.println("\nDominis dels correus:");
+        System.out.println("────────────────────────────");
+        for (String c : correus) {
+            int pos = c.indexOf("@");
+            if (pos != -1 && pos < c.length() - 1) {
+                System.out.println("• " + c.substring(pos + 1));
+            } else {
+                System.out.println("• " + "No té domini vàlid: " + c);
+            }
+
+        }
+    }
+```
+
+# 🧠 Exercici S5
+
+## 📋 Enunciat
+
+## 🛠️ Solució proposada
+
+Organitza el codi en blocs o funcions que s'encarreguen de cada validació:
+
+- Comprovació de la primera lletra
+- Comprovació de la longitud
+- Comprovació d'espais
+- Comprovació de caràcters alfanumèrics
+
+Per al sugeriment:
+
+1. **Eliminar caràcters no alfanumèrics**
+   - Recorre cada caràcter del nom original.
+   - Conserva només les lletres (`a-z`, `A-Z`) i els números (`0-9`).
+
+2. **Afegir una lletra al principi si cal**
+   - Si el primer caràcter resultant **no és una lletra**, afegeix una lletra (`u`, per exemple) al principi.
+
+3. **Ajustar la longitud**
+   - Si el nom resultant té **menys de 5 caràcters**, afegeix caràcters (com `x`) fins arribar a 5.
+   - Si té **més de 12 caràcters**, retalla'l fins a 12.
+
+## 📦 Codi Java
+
+```java
+ public static void main(String[] args)  {
+        String[] usuaris = { "123maria", "joan_perez", "ana", "usuari correcte", "marta!" };
+
+        for (String usuari : usuaris) {
+            System.out.println("Usuari: " + usuari);
+
+            boolean valid = true;
+
+            // Comprovar si comença amb lletra
+            if (!Character.isLetter(usuari.charAt(0))) {
+                valid = false;
+                System.out.println(" • No comença amb lletra.");
+            }
+
+            // Comprovar longitud
+            if (usuari.length() < 5 || usuari.length() > 12) {
+                valid = false;
+                System.out.println(" • Longitud incorrecta.");
+            }
+
+            // Comprovar espais
+            if (usuari.contains(" ")) {
+                valid = false;
+                System.out.println(" • Conté espais.");
+            }
+
+            boolean trobat = false;
+            for (int i = 0; i < usuari.length(); i++) {
+                char lletra = usuari.charAt(i);
+
+                // Comprovar si la lletra no és una lletra o un número
+                if (!(lletra >= 'a' && lletra <= 'z') ||
+                        (lletra >= 'A' && lletra <= 'Z') ||
+                        (lletra >= '0' && lletra <= '9')) {
+                    if (!trobat) {
+
+                        valid = false;
+                        System.out.println(" • Conté caràcters no alfanumèrics.");
+                        trobat = true;// Ja he trobat un error, no cal repetir
+                    }
+
+                }
+
+            }
+            trobat = false;
+            if (valid) {
+                System.out.println(" -> Vàlid");
+            } else {
+
+                // Sugeriment
+                String sugeriment = "";
+
+                //si es diferent a lletra o número no l'afegisc
+                for (int i = 0; i < usuari.length(); i++) {
+                    char lletra = usuari.charAt(i);
+                    if ((lletra >= 'a' && lletra <= 'z') ||
+                            (lletra >= 'A' && lletra <= 'Z') ||
+                            (lletra >= '0' && lletra <= '9')) {
+                        sugeriment += lletra;
+                    }
+                }
+
+                if (!Character.isLetter(sugeriment.charAt(0))) {
+                    sugeriment = "u" + sugeriment;
+                }
+                if (sugeriment.length() < 5) {
+                    while (sugeriment.length() < 5)
+                        sugeriment += "x";
+                } else if (sugeriment.length() > 12) {
+                    sugeriment = sugeriment.substring(0, 12);
+                }
+                System.out.println(" -> Sugeriment: " + sugeriment);
+            }
+
+            System.out.println();
+        }
+
+    }
+```
