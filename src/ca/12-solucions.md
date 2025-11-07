@@ -22,7 +22,7 @@ Després de cada nextInt() has d’afegir una línia per "buidar" el Scanner:
 
 # 🧠 Exercici v1
 
-## 📋 Enunciat
+## 📋 Enunciat V1
 a) Declara i inicialitza un vector de 8 enters. Mostra el contingut del vector per pantalla.  
 b) Mostra quants valors són positius i quants negatius.  
 c) Mostra la suma i la mitjana dels valors del vector.  
@@ -86,7 +86,7 @@ Mostra per pantalla:
 
 # 🧠 Exercici V2
 
-## 📋 Enunciat
+## 📋 Enunciat V2
 a) Declara i ompli un vector amb N paraules, on N és un número introduït per teclat i les paraules són cadenes també introduïdes per teclat.
 b) Mostra aquelles paraules que comencen per vocal.
 c) Mostra quina és la paraula més llarga, i indica el tamany.
@@ -165,7 +165,7 @@ c) Mostra quina és la paraula més llarga, i indica el tamany.
 
 # 🧠 Exercici V3
 
-## 📋 Enunciat
+## 📋 Enunciat V3
 a) Introdueix en un vector 10 paraules donades per l'usuari. Mostra-les.
 b) Indica si hi ha paraules repetides. Mostra-les.
 
@@ -246,7 +246,7 @@ Mostra:
 
 # 🧠 Exercici V4
 
-## 📋 Enunciat
+## 📋 Enunciat V4
 S'està analitzant un qüestionari amb 10 preguntes, cadascuna amb 4 possibles solucions (1, 2, 3 o 4), realitzat per diversos estudiants.
 
 a) Declara un vector on s'emmagatzemen les respostes correctes del test. Usa números enters aleatoris entre 1 i 4.
@@ -323,7 +323,7 @@ d) Calcula i mostra la nota obtinguda. Si la nota ix negativa, serà 0. Usa la s
 
 ### Exercici V5
 
-## 📋 Enunciat
+## 📋 Enunciat V5
 Un sistema ha de controlar un conjunt d'usuaris que s'autentiquen amb nom i contrasenya. Només cal emmagatzemar i comprovar aquestes dades, sense xifrar.
 
 a) Declara i inicialitza dos vectors paral·lels amb 5 noms d'usuari i les seues contrasenyes. Genera les contrasenyes com a un conjunt aleatori d'enters.
@@ -429,7 +429,7 @@ d) Si has iniciat correctament la sessió, mostra un menú amb dos opcions: una 
 
 # 🧠 Exercici S1
 
-## 📋 Enunciat
+## 📋 Enunciat S1
 
 Una aplicació web vol validar contrasenyes segons certes normes abans de registrar-les. Un valor numèric indicarà la fiabilitat de la contrasenya:
 
@@ -509,7 +509,7 @@ public static void main(String[] args) {
 
 # 🧠 Exercici S2
 
-## 📋 Enunciat
+## 📋 Enunciat S2
 
 En una carpeta hi ha diversos noms de fitxer. Cal analitzar-los per identificar els seus tipus i validar els noms.
 
@@ -594,7 +594,7 @@ public static void main(String[] args){
 
 # 🧠 Exercici S3
 
-## 📋 Enunciat
+## 📋 Enunciat S3
 
 Es volen fer una sèrie de comprovacions en una frase. Realitza-les i mostra el resultat.
 
@@ -646,7 +646,7 @@ import java.util.Scanner;
 ```
 # 🧠 Exercici S4
 
-## 📋 Enunciat
+## 📋 Enunciat S4
 
 Una aplicació ha rebut una llista de correus electrònics que cal validar i analitzar.
 
@@ -707,7 +707,7 @@ Una aplicació ha rebut una llista de correus electrònics que cal validar i ana
 
 # 🧠 Exercici S5
 
-## 📋 Enunciat
+## 📋 Enunciat S5
 
 ## 🛠️ Solució proposada
 
