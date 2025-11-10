@@ -154,3 +154,56 @@ Tens una matriu String de 6x4 on cada fila representa una variable i cada column
 **b)** Mostra quines variables han tingut, almenys, un "ERROR".  
 **c)** Mostra en quina versió es produeixen més "NULL".  
 **d)** Mostra un resum amb quantes vegades apareix cada estat globalment.  
+
+## Exercicis - Llistats
+
+### Exercici L1
+
+**a)** Demana valors enters a l'usuari fins que escriga un valor negatiu. Guarda'ls en una llista.  
+**b)** Mostra la llista completa.  
+**c)** Mostra quants valors hi ha i la suma total.  
+**d)** Mostra només els valors parells.  
+**e)** Mostra només els valors imparells.  
+**f)** Permet a l'usuari demanar una posició (es demanarà fins que trie una correcta) i elimina el valor del llistat en eixa posició.  
+
+### Exercici L2
+
+**a)** Crea una llista amb noms d'alumnes. L'usuari va afegint noms fins que escriu "fi".  
+**b)** Mostra el nombre d'alumnes i els seus noms en l'ordre original.  
+**c)** Mostra els noms ordenats alfabèticament.  
+**d)** Permet buscar un nom i indicar si està en la llista.  
+**e)** Modifica el programa per a mostrar un menú amb les següents opcions:  
+
+- Mostrar els alumnes ordenats alfabèticament.
+- Buscar un alumne i, si existeix, indicar la posició.
+- Afegir un alumne (si no es troba ja al llistat).
+- Eliminar un alumne (si existeix).
+
+### Exercici L3
+
+S'han recollit les temperatures màximes de cada dia durant un mes. Es volen analitzar.
+
+**a)** Emmagatzema 30 valors en una llista (números aleatoris entre 15 i 20, per exemple). Mostra el llistat dels dies junt amb la seua temperatura.  
+**b)** Mostra la mitjana mensual, i també els dies amb temperatura superior a la mitjana.  
+**c)** Mostra la longitud de la seqüència més llarga de dies seguits amb temperatures superiors a 30 °C.  
+
+### Exercici L4
+
+S'ha recollit el temps (en segons) que cada usuari ha tardat en respondre una enquesta. Es volen detectar patrons i casos sospitosos.
+
+**a)** Genera un llistat de temps per a cada usuari amb números aleatoris entre 1 i 100. Mostra els temps i la mitjana.  
+**b)** Mostra quins usuaris (indicant les posicions) han respost en menys de 10 segons (possibles bots). Per exemple:  
+
+```plaintext
+Els usuaris que han respost en menys de 10 segons són: 3, 6, 15, 27,
+```
+
+**c)** Mostra el percentatge d'usuaris que han tardat entre 20 i 60 segons.  
+
+### Exercici L5
+
+S'està celebrant un torneig d'escacs i es registren els resultats de les partides entre participants. Cada resultat indica el nom del guanyador i del perdedor.
+
+**a)** Introdueix en un llistat els resultats de les partides. Cada posició del llistat indica una partida, i ha d'haver dos valors (guanyador, perdedor). Usa un vector per a emmagatzemar els dos valors en cada posició del llistat.  
+**b)** Mostra la llista de jugadors únics que han participat (sense repetir).  
+**c)** Mostra el nombre total de victòries per a cada jugador.  
