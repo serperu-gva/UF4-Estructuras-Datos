@@ -31,8 +31,9 @@ export default ({
               { text: "4. Matrices (arrays multidimensionales)", link: '/4-matrius' },
               { text: '5. Buscar con vectores', link: '/5-cercar' },
               { text: '6. Ordenación de vectores', link: '/6-ordenar' },
-              { text: '💡Ejemplos', link: '/7-exemples' },
-              { text: '✏️Ejercicios', link: '/8-exercicis' },
+              { text: '7. ArrayList', link: '/7-arraylist' },
+              { text: '💡Ejemplos', link: '/8-exemples' },
+              { text: '✏️Ejercicios', link: '/9-exercicis' },
             ]}
           ]
       }
@@ -56,8 +57,9 @@ export default ({
               { text: "4. Matrius (arrays multidimensionals)", link: '/ca/4-matrius' },
               { text: '5. Cercar amb vectors', link: '/ca/5-cercar' },
               { text: '6. Ordenació de vectors', link: '/ca/6-ordenar' },
-              { text: '💡Exemples', link: '/ca/7-exemples' },
-              { text: '✏️Exercicis', link: '/ca/8-exercicis' },
+               { text: '7. ArrayList', link: '/7-arraylist' },
+              { text: '💡Exemples', link: '/ca/8-exemples' },
+              { text: '✏️Exercicis', link: '/ca/9-exercicis' },
             ]}
           ]
       }
@@ -78,8 +80,9 @@ export default ({
           { text: "4. Matrices (arrays multidimensionales)", link: '/4-matrius' },
           { text: '5. Buscar con vectores', link: '/5-cercar' },
           { text: '6. Ordenación de vectores', link: '/6-ordenar' },
-          { text: '💡Ejemplos', link: '/7-exemples' },
-          { text: '✏️Ejercicios', link: '/8-exercicis' },
+          { text: '7. ArrayList', link: '/7-arraylist' },
+          { text: '💡Ejemplos', link: '/8-exemples' },
+          { text: '✏️Ejercicios', link: '/9-exercicis' },
         ]},
         { text: '📚 Contenidos adicionales', items: [          
           { text: "La clase Arrays", link: '/9-classe_arrays' },
@@ -97,8 +100,9 @@ export default ({
           { text: "4. Matrius (arrays multidimensionals)", link: '/ca/4-matrius' },
           { text: '5. Cercar amb vectors', link: '/ca/5-cercar' },
           { text: '6. Ordenació de vectors', link: '/ca/6-ordenar' },
-          { text: '💡Exemples', link: '/ca/7-exemples' },
-          { text: '✏️Exercicis', link: '/ca/8-exercicis' },
+          { text: '7. ArrayList', link: '/7-arraylist' },
+          { text: '💡Exemples', link: '/ca/8-exemples' },
+          { text: '✏️Exercicis', link: '/ca/9-exercicis' },
         ]},
         { text: '📚 Continguts addicionals', items: [          
           { text: "La classe Arrays", link: '/ca/9-classe_arrays' },
