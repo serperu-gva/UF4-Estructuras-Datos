@@ -513,7 +513,6 @@ public static void main(String[] args) {
 
 En una carpeta hi ha diversos noms de fitxer. Cal analitzar-los per identificar els seus tipus i validar els noms.
 
-## Exercicis
 
 **a)** Desa 8 noms de fitxer (amb extensió) en un vector de `String`. Mostra'ls.
 
@@ -650,7 +649,7 @@ import java.util.Scanner;
 
 Una aplicació ha rebut una llista de correus electrònics que cal validar i analitzar.
 
-## Exercicis
+
 
 **a)** Desa 5 correus en un vector de `String`. Mostra'ls.
 
