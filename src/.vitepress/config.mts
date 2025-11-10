@@ -85,9 +85,9 @@ export default ({
           { text: '✏️Ejercicios', link: '/9-exercicis' },
         ]},
         { text: '📚 Contenidos adicionales', items: [          
-          { text: "La clase Arrays", link: '/9-classe_arrays' },
-          { text: 'La clase String', link: '/10-classe_string' },
-          { text: 'For en formato foreach', link: '/11-add_foreach' },
+          { text: "La clase Arrays", link: '/10-classe_arrays' },
+          { text: 'La clase String', link: '/11-classe_string' },
+          { text: 'For en formato foreach', link: '/12-add_foreach' },
           { text: '<img src="img/logo-gva.png" class="logo-anim" style="vertical-align:middle; height:150px; margin-top:100px;">', link: '' },
           { text: '<img src="img/logo-centro.png" class="logo-anim" style="vertical-align:middle; height:150px;">', link: '' }
         ]}      
@@ -105,9 +105,9 @@ export default ({
           { text: '✏️Exercicis', link: '/ca/9-exercicis' },
         ]},
         { text: '📚 Continguts addicionals', items: [          
-          { text: "La classe Arrays", link: '/ca/9-classe_arrays' },
-          { text: 'La classe String', link: '/ca/10-classe_string' },
-          { text: 'For en format foreach', link: '/ca/11-add_foreach' },
+          { text: "La classe Arrays", link: '/ca/10-classe_arrays' },
+          { text: 'La classe String', link: '/ca/11-classe_string' },
+          { text: 'For en format foreach', link: '/ca/12-add_foreach' },
           { text: '<img src="../img/logo-gva.png" class="logo-anim" style="vertical-align:middle; height:150px; margin-top:100px;">', link: '' },
           { text: '<img src="../img/logo-centro.png" class="logo-anim" style="vertical-align:middle; height:150px;">', link: '' }
         ]}
