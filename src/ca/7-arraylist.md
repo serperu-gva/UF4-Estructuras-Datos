@@ -92,67 +92,78 @@ for(String nom : noms)
 ```java
 noms.remove(0); // elimina "Pau"
 ```
+<div style="
+  border-left: 4px solid #ffcccb;
+  background-color: #fff0f5;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin: 1em 0;
+  color: #b03060;">
 
-:::
-
->***Exemple complets d'un Array:***
->
->::: tabs
->== Java
->
->```java
->// Declarar array de 3 elements 
->int[] edats = new int[3];
->
->// Omplir
->edats[0] = 20; 
->edats[1] = 25;
->edats[2] = 30;
->
->// Accedir a un element
->int primeraEdat = edats[0]; 
->
->// Per eliminar el element, edats[1] hem de assignar-li un valor null
->edats[1] = null;
->
->// Ara conté [20, null, 30] però la mida segueix sent 3, encara que hi haga un element menys
->```
->
->:::
-
-**IMPORTANT!**: Per a eliminar un element d'un array i que canvie el seu tamany cal:
+⚠️ Per a <strong>eliminar</strong>  un element d'un array i que canvie el seu tamany cal:
 
 - Crea un nou array amb una longitud 1 menor que l'original. 
 - Copia tots els elements de l'array original excepte el que vols eliminar al nou array. 
 - Assigna el nou array a l'array original.
 
->***Exemple complet d'un ArrayList:***
->
->::: tabs
->== Java
->
->```java
->// Declarar ArrayList
->ArrayList<Integer> edats = new ArrayList<>();
->
->// Afegir elements 
->edats.add(20);
->edats.add(25);
->
->// Accedir a un element
->int primeraEdat = edats.get(0);
->
->// Eliminar un element
->edats.remove(0);
->
->// La mida canvia dinàmicament
->```
->
->:::
 
-La diferència principal amb un ArrayList és:
+
+⚠️  La <strong>diferència</strong> principal amb un ArrayList és:
 
 - En un ArrayList si eliminem un element, la mida es redueix automàticament.
 - En canvi en un Array, encara que eliminem un element, la mida total continua sent la mateixa.
 - Hem de desplaçar manualment els elements per "emplenar" la posició eliminada.
 - L'Array sempre ocupa el mateix espai en memòria, encara que estigui parcialment buit.
+
+</div>
+
+:::
+
+1. Ordenar la llista:
+
+::: tabs
+== Java
+
+```java
+Collections.sort(noms); //ordena alfabèticament
+```
+
+:::
+
+7. Traure posició de element en la llista:
+
+::: tabs
+== Java
+
+```java
+noms.indexOf("Marta"); //retorna la posició
+```
+
+:::
+
+8. Saber si està el element:
+
+::: tabs
+== Java
+
+```java
+noms.contains("Marta"); //retorna true si troba el String
+```
+
+:::
+
+9. Grandària de la llista:
+
+::: tabs
+== Java
+
+```java
+noms.size(); // retorna el número d'elements de la llista
+```
+
+:::
+
+
+:::
+
+

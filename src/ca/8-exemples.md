@@ -477,3 +477,55 @@ El vector introduït és: 1 2 3 4 5
 :::
 
 Podem introduir els valors amb espais i una vegada introduït el cinqué número donar-li al 'intro'. O introduir un valor per línia.
+
+
+:::
+
+## Exemple eliminar element d'un Array
+
+
+>::: tabs
+>== Java
+>
+>```java
+>// Declarar array de 3 elements 
+>int[] edats = new int[3];
+>
+>// Omplir
+>edats[0] = 20; 
+>edats[1] = 25;
+>edats[2] = 30;
+>
+>// Accedir a un element
+>int primeraEdat = edats[0]; 
+>
+>// Per eliminar el element, edats[1] hem de assignar-li un valor null
+>edats[1] = null;
+>
+>// Ara conté [20, null, 30] però la mida segueix sent 3, encara que hi haga un element menys
+>```
+>
+
+ ## Exemple eliminar element d'un ArrayList
+>
+>::: tabs
+>== Java
+>
+>```java
+>// Declarar ArrayList
+>ArrayList<Integer> edats = new ArrayList<>();
+>
+>// Afegir elements 
+>edats.add(20);
+>edats.add(25);
+>
+>// Accedir a un element
+>int primeraEdat = edats.get(0);
+>
+>// Eliminar un element
+>edats.remove(0);
+>
+>// La mida canvia dinàmicament
+>```
+>
+>:::
