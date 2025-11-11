@@ -119,7 +119,7 @@ noms.remove(0); // elimina "Pau"
 
 :::
 
-1. Ordenar la llista:
+6. Ordenar la llista:
 
 ::: tabs
 == Java
