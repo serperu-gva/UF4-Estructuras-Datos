@@ -432,7 +432,9 @@ public class UF05Exemple10 {
 
 :::
 
-## Exemple d'ompliment i recorregut d'un vector
+## Exemple 11
+
+Ompliment i recorregut d'un vector
 
 Veurem un exemple de com omplir i mostrar un vector d'enters:
 
@@ -481,7 +483,9 @@ Podem introduir els valors amb espais i una vegada introduït el cinqué número
 
 :::
 
-## Exemple eliminar element d'un Array
+## Exemple 12
+
+Eliminar element d'un Array
 
 
 >::: tabs
@@ -506,7 +510,9 @@ Podem introduir els valors amb espais i una vegada introduït el cinqué número
 >```
 >
 
- ## Exemple eliminar element d'un ArrayList
+ ## Exemple 13
+ 
+ Eliminar element d'un ArrayList
 >
 >::: tabs
 >== Java
