@@ -164,6 +164,4 @@ noms.size(); // retorna el número d'elements de la llista
 :::
 
 
-:::
-
 

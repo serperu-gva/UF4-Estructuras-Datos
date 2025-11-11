@@ -813,4 +813,489 @@ Per al sugeriment:
     }
 ```
 
+# 🧠 Exercici L1
 
+## 📋 Enunciat L1
+
+a) Demana valors enters a l'usuari fins que escriga un valor negatiu. Guarda'ls en una llista.  
+b) Mostra la llista completa.  
+c) Mostra quants valors hi ha i la suma total.  
+d) Mostra només els valors parells.  
+e) Mostra només els valors imparells.  
+f) Permet a l'usuari demanar una posició (es demanarà fins que trie una correcta) i elimina el valor del llistat en eixa posició.
+
+
+## 🛠️ Solució proposada
+
+ a) Demanar valors fins que siga negatiu
+- Crear un bucle `do-while` que demane a l’usuari un número enter.
+- Si el número és **major o igual a 0**, afegir-lo a la llista.
+- El bucle acaba quan l’usuari introdueix un número **negatiu**.
+
+ b) Mostrar la llista completa
+- Utilitzar `System.out.println("Llista completa: " + llista);`
+- Això mostra tots els valors guardats en la llista.
+
+c) Nombre de valors i suma
+- Calcular la **suma** recorrent la llista amb un bucle `for`.
+- Mostrar:
+  - El nombre de valors amb `llista.size()`.
+  - La suma total amb la variable acumulada.
+
+ d) Mostrar només els valors parells
+- Recórrer la llista amb un bucle `for`.
+- Comprovar si `v % 2 == 0`.
+- Si és cert, imprimir el valor.
+
+ e) Mostrar només els valors imparells
+- Recórrer la llista amb un bucle `for`.
+- Comprovar si `v % 2 != 0`.
+- Si és cert, imprimir el valor.
+
+ f) Eliminar un valor per posició
+- Demanar a l’usuari una posició dins del rang `0` fins `llista.size()-1`.
+- Repetir la petició fins que siga vàlida (`do-while`).
+- Utilitzar `llista.remove(pos)` per eliminar el valor.
+- Mostrar la llista després de 
+## 📦 Codi Java
+
+```java
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        List<Integer> llista = new ArrayList<>();
+
+        // a) Demanar valors fins negatiu
+        int valor;
+        do {
+            System.out.print("Introdueix un enter (negatiu per acabar): ");
+            valor = sc.nextInt();
+            if (valor >= 0)
+                llista.add(valor);
+        } while (valor >= 0);
+
+        // b) Mostrar llista completa
+        System.out.println("Llista completa: " + llista);
+
+        // c) Nombre de valors i suma
+        int suma = 0;
+        for (int v : llista)
+            suma += v;
+        System.out.println("Nombre de valors: " + llista.size());
+        System.out.println("Suma total: " + suma);
+
+        // d) Valors parells
+        System.out.print("Valors parells: ");
+        for (int v : llista)
+            if (v % 2 == 0)
+                System.out.print(v + " ");
+        System.out.println();
+
+        // e) Valors imparells
+        System.out.print("Valors imparells: ");
+        for (int v : llista)
+            if (v % 2 != 0)
+                System.out.print(v + " ");
+        System.out.println();
+
+        // f) Eliminar per posició
+        int pos;
+        do {
+            System.out.print("Introdueix una posició a eliminar (0-" + (llista.size() - 1) + "): ");
+            pos = sc.nextInt();
+        } while (pos < 0 || pos >= llista.size());
+        llista.remove(pos);
+        System.out.println("Llista després d'eliminar: " + llista);
+    }
+```
+# 🧠 Exercici L2
+
+## 📋 Enunciat L2
+
+a) Crea una llista amb noms d'alumnes. L'usuari va afegint noms fins que escriu "fi".  
+b) Mostra el nombre d'alumnes i els seus noms en l'ordre original.  
+c) Mostra els noms ordenats alfabèticament.  
+d) Permet buscar un nom i indicar si està en la llista.  
+e) Modifica el programa per a mostrar un menú amb les següents opcions:
+
+    - Mostrar els alumnes ordenats alfabèticament.
+    - Buscar un alumne i, si existeix, indicar la posició.
+    - Afegir un alumne (si no es troba ja al llistat).
+    - Eliminar un alumne (si existeix).
+
+
+## 🛠️ Solució proposada
+
+ a) Afegir noms fins "fi"
+- Es crea una llista buida `alumnes`.
+- Amb un bucle `do-while` es demana a l’usuari que introduïsca noms.
+- Si el nom no és `"fi"`, s’afegeix a la llista.
+- El bucle acaba quan l’usuari escriu `"fi"`.
+
+ b) Nombre i ordre original
+- Es mostra el nombre total d’alumnes amb `alumnes.size()`.
+- Es mostra la llista completa en l’ordre en què s’han introduït.
+
+ c) Ordenats alfabèticament
+- Es crea una còpia de la llista amb `new ArrayList<>(alumnes)`.
+- Es fa servir `Collections.sort()` per ordenar els noms.
+- Es mostra la llista ordenada.
+
+ d) Buscar un nom
+- Es demana a l’usuari un nom a buscar.
+- Amb `alumnes.contains(buscar)` es comprova si està en la llista.
+- Es mostra un missatge indicant si el nom existeix o no.
+
+ e) Menú amb opcions
+- Es mostra un menú amb les opcions:
+  1. Mostrar alumnes ordenats.
+  2. Buscar alumne i indicar la posició.
+  3. Afegir alumne (si no existeix).
+  4. Eliminar alumne (si existeix).
+  0. Eixir.
+- Amb un bucle `do-while` es repeteix fins que l’usuari trie l’opció `0`.
+- Cada opció es gestiona amb un `switch`:
+  - **Opció 1:** Ordena i mostra la llista.
+  - **Opció 2:** Busca un alumne i mostra la posició si existeix.
+  - **Opció 3:** Afig un alumne si no està ja en la llista.
+  - **Opció 4:** Elimina un alumne si existeix.
+  - **Opció 0:** Finalitza el 
+## 📦 Codi Java
+
+```java
+ public static void main(String[] args) 
+        Scanner sc = new Scanner(System.in);
+        List<String> alumnes = new ArrayList<>();
+
+        // a) Afegir noms fins "fi"
+        String nom;
+        do {
+            System.out.print("Introdueix nom d'alumne (fi per acabar): ");
+            nom = sc.nextLine();
+            if (!nom.equalsIgnoreCase("fi"))
+                alumnes.add(nom);
+        } while (!nom.equalsIgnoreCase("fi"));
+
+        // b) Nombre i ordre original
+        System.out.println("Nombre d'alumnes: " + alumnes.size());
+        System.out.println("Alumnes: " + alumnes);
+
+        // c) Ordenats alfabèticament
+        List<String> ordenats = new ArrayList<>(alumnes);
+        Collections.sort(ordenats);
+        System.out.println("Ordenats: " + ordenats);
+
+        // d) Buscar un nom
+        System.out.print("Nom a buscar: ");
+        String buscar = sc.nextLine();
+        if (alumnes.contains(buscar))
+            System.out.println(buscar + " està en la llista.");
+        else
+            System.out.println(buscar + " no està en la llista.");
+
+        // e) Menú
+        int opcio;
+        do {
+            System.out.println("\n--- MENÚ ---");
+            System.out.println("1. Mostrar ordenats");
+            System.out.println("2. Buscar alumne");
+            System.out.println("3. Afegir alumne");
+            System.out.println("4. Eliminar alumne");
+            System.out.println("0. Eixir");
+            System.out.print("Opció: ");
+            opcio = sc.nextInt();
+            sc.nextLine();
+
+            switch (opcio) {
+                case 1:
+                    Collections.sort(alumnes);
+                    System.out.println(alumnes);
+                    break;
+                case 2:
+                    System.out.print("Nom a buscar: ");
+                    buscar = sc.nextLine();
+                    int pos = alumnes.indexOf(buscar);
+                    if (pos >= 0)
+                        System.out.println(buscar + " està en posició " + pos);
+                    else
+                        System.out.println("No trobat.");
+                    break;
+                case 3:
+                    System.out.print("Nom a afegir: ");
+                    nom = sc.nextLine();
+                    if (!alumnes.contains(nom))
+                        alumnes.add(nom);
+                    else
+                        System.out.println("Ja existeix.");
+                    break;
+                case 4:
+                    System.out.print("Nom a eliminar: ");
+                    nom = sc.nextLine();
+                    if (alumnes.remove(nom))
+                        System.out.println("Eliminat.");
+                    else
+                        System.out.println("No trobat.");
+                    break;
+            }
+        } while (opcio != 0);
+    }
+
+```
+# 🧠 Exercici L3
+
+## 📋 Enunciat L3
+
+a) Emmagatzema 30 valors en una llista (números aleatoris entre 15 i 20, per exemple). Mostra el llistat dels dies junt amb la seua temperatura.  
+b) Mostra la mitjana mensual, i també els dies amb temperatura superior a la mitjana.  
+c) Mostra la longitud de la seqüència més llarga de dies seguits amb temperatures superiors a 30 °C.
+
+
+## 🛠️ Solució proposada
+
+ a) Generar 30 valors
+- Es crea una llista `temps` buida.
+- Amb un bucle `for` es generen 30 nombres aleatoris entre **15 i 20** (`15 + rnd.nextInt(6)`).
+- Cada valor representa la temperatura màxima d’un dia.
+- Es mostra per pantalla cada dia amb la seua temperatura.
+
+ b) Calcular la mitjana i mostrar dies superiors
+- Es calcula la **suma** de totes les temperatures amb un bucle `for-each`.
+- La **mitjana** es calcula com `suma / temps.size()`.
+- Es mostra la mitjana mensual.
+- Es recorre la llista i es mostren els dies (posicions) en què la temperatura és **superior a la mitjana**.
+
+ c) Seqüència més llarga de dies >30 °C
+- Es defineixen dos comptadors:  
+  - `actual` → longitud de la seqüència actual.  
+  - `maxSeq` → longitud màxima trobada.
+- Es recorre la llista:
+  - Si la temperatura és **major que 30**, s’incrementa `actual` i s’actualitza `maxSeq`.
+  - Si no, es reinicia `actual` a 0.
+- Al final es mostra la seqüència més llarga de dies consecutius amb temperatura superior a 
+- 
+## 📦 Codi Java
+
+```java
+public static void main(String[] args) {
+        Random rnd = new Random();
+        List<Integer> temps = new ArrayList<>();
+
+        // a) Generar 30 valors
+        for (int i = 0; i < 30; i++) {
+            temps.add(15 + rnd.nextInt(6)); // entre 15 i 20
+        }
+        for (int i = 0; i < temps.size(); i++) {
+            System.out.println("Dia " + (i + 1) + ": " + temps.get(i) + "°C");
+        }
+
+        // b) Mitjana i dies superiors
+        double mitjana = 0;
+        int suma = 0;
+
+        for (int t : temps) {
+            suma += t;
+        }
+        mitjana =suma / temps.size();
+        System.out.println("Mitjana mensual: " + mitjana);
+
+        System.out.print("Dies amb temperatura superior: ");
+        for (int i = 0; i < temps.size(); i++) {
+            if (temps.get(i) > mitjana)
+                System.out.print((i + 1) + " ");
+        }
+        System.out.println();
+
+        // c) Seqüència més llarga >30
+        int maxSeq = 0, actual = 0;
+        for (int t : temps) {
+            if (t > 30) {
+                actual++;
+                maxSeq = Math.max(maxSeq, actual);
+            } else {
+                actual = 0;
+            }
+        }
+        System.out.println("Seqüència més llarga de dies >30°C: " + maxSeq);
+    }
+
+```
+# 🧠 Exercici L4
+
+## 📋 Enunciat L4
+
+S'ha recollit el temps (en segons) que cada usuari ha tardat en respondre una enquesta. Es volen detectar patrons i casos sospitosos.
+
+a) Genera un llistat de temps per a cada usuari amb números aleatoris entre 1 i 100. Mostra els temps i la mitjana.  
+b) Mostra quins usuaris (indicant les posicions) han respost en menys de 10 segons (possibles bots). Per exemple:
+
+```
+Els usuaris que han respost en menys de 10 segons són: 3, 6, 15, 27,
+```
+c) Mostra el percentatge d'usuaris que han tardat entre 20 i 60 segons.
+
+## 🛠️ Solució proposada
+
+ a) Generar temps de resposta
+- Es defineix una constant `NUM_USUARIS = 30`.
+- Es crea una llista `temps` per guardar els valors.
+- Amb un bucle `for` es generen 30 números aleatoris entre **1 i 100** (`rand.nextInt(100) + 1`).
+- Cada valor representa el temps (en segons) que un usuari ha tardat en respondre.
+- Es calcula la **suma total** dels temps.
+
+ b) Calcular la mitjana
+- La mitjana es calcula com `suma / NUM_USUARIS`.
+- Es mostra la mitjana amb format arrodonit (`String.format("%.0f", mitjana)`).
+
+ c) Mostrar temps per usuari
+- Es recorre la llista `temps` amb un bucle.
+- Es mostra per pantalla cada usuari amb el seu temps corresponent.
+
+ d) Detectar respostes sospitoses (<10 segons)
+- Es recorre la llista.
+- Si el temps és **menor que 10**, es mostra la posició de l’usuari.
+- Això permet identificar possibles **bots** o respostes massa ràpides.
+
+ e) Comptar usuaris amb temps entre 20 i 60 segons
+- Es crea un comptador inicialitzat a 0.
+- Es recorre la llista i s’incrementa el comptador si el temps està dins del rang `[20, 60]`.
+- Es calcula el **percentatge** respecte al total d’usuaris:  
+  `percentatge = comptador * 100 / NUM_USUARIS`.
+- Es mostra el percentatge amb format arrodonit.
+
+## 📦 Codi Java
+
+```java
+
+public static void main(String[] args) {
+
+        final int NUM_USUARIS = 30; // Constant
+
+        List<Integer> temps = new ArrayList<>();
+        Random rand = new Random();
+
+        int suma = 0;
+        for (int i = 0; i < NUM_USUARIS; i++) {
+            int t = rand.nextInt(100) + 1; // entre 1 i 100
+            temps.add(t);
+            suma += t;
+        }
+
+        double mitjana = suma / NUM_USUARIS;
+
+        System.out.println("Temps per usuari:");
+        for (int i = 0; i < temps.size(); i++) {
+            System.out.println("Usuari " + (i + 1) + ": " + temps.get(i) + " segons");
+        }
+        System.out.println();
+        System.out.println("Mitjana de temps: " + String.format("%.0f", mitjana) + " segons");
+
+        System.out.print("\nEls usuaris que han respost en menys de 10 segons són: ");
+        for (int i = 0; i < temps.size(); i++) {
+            if (temps.get(i) < 10) {
+                System.out.print((i + 1) + ", ");
+            }
+        }
+
+        System.out.println();
+
+        //creem un comptador per saber quants han tardat entre 20 y 60 segons
+
+        int comptador = 0;
+        for (int t : temps) {
+            if (t >= 20 && t <= 60) {
+                comptador++;
+            }
+        }
+
+        double percentatge = comptador * 100 / NUM_USUARIS;
+        System.out.println("Percentatge d'usuaris entre 20 i 60 segons: " + String.format("%.0f", percentatge) + " % ");
+        System.out.println();
+
+    }
+```
+# 🧠 Exercici L5
+
+## 📋 Enunciat L5
+
+S'està celebrant un torneig d'escacs i es registren els resultats de les partides entre participants. Cada resultat indica el nom del guanyador i del perdedor.
+
+a) Introdueix en un llistat els resultats de les partides. Cada posició del llistat indica una partida, i ha d'haver dos valors (guanyador, perdedor). Usa un vector per a emmagatzemar els dos valors en cada posició del llistat.  
+b) Mostra la llista de jugadors únics que han participat (sense repetir).  
+c) Mostra el nombre total de victòries per a cada jugador.
+
+
+## 🛠️ Solució proposada
+
+ a) Resultats de les partides
+- Es crea una llista `partides` on cada element és un vector de dos posicions:
+  - [0] → guanyador
+  - [1] → perdedor
+- Exemple: `{"Anna", "Joan"}` significa que **Anna** ha guanyat a **Joan**.
+
+ b) Jugadors únics
+- Es recorre cada partida i cada jugador.
+- Si el jugador no està ja en la llista `jugadorsUnics`, s’afegeix.
+- Al final es mostra la llista de tots els participants sense repeticions.
+
+ c) Nombre de victòries per jugador
+- Es creen dues llistes paral·leles:
+  - `noms` → guarda els noms dels guanyadors.
+  - `victòries` → guarda el nombre de victòries corresponent.
+- Per cada partida:
+  - Es mira el guanyador.
+  - Si ja està en `noms`, s’incrementa el seu comptador en `victòries`.
+  - Si no està, s’afegeix amb valor inicial 1.
+- Finalment, es mostra per cada jugador únic el nombre de victòries (si no té cap, es mostra 0).
+
+## 📦 Codi Java
+
+```java
+
+public static void main(String[] args) {
+
+        // a) Resultats de les partides
+        List<String[]> partides = new ArrayList<>();
+        partides.add(new String[] { "Anna", "Joan" });
+        partides.add(new String[] { "Joan", "Maria" });
+        partides.add(new String[] { "Anna", "Maria" });
+        partides.add(new String[] { "Maria", "Pau" });
+        partides.add(new String[] { "Pau", "Joan" });
+
+        // b) Jugadors únics
+
+        List<String> jugadorsUnics = new ArrayList<>();
+        for (String[] partida : partides) {
+            for (String jugador : partida) {
+                if (!jugadorsUnics.contains(jugador)) {
+                    jugadorsUnics.add(jugador);
+                }
+            }
+        }
+        System.out.print("• Jugadors: ");
+        System.out.println(jugadorsUnics);
+
+
+        // c) Nombre de victòries per jugador
+        List<String> noms = new ArrayList<>();
+        List<Integer> victòries = new ArrayList<>();
+
+        for (String[] partida : partides) {
+            String guanyador = partida[0];
+            if (noms.contains(guanyador)) {
+                int index = noms.indexOf(guanyador);
+                victòries.set(index, victòries.get(index) + 1);
+            } else {
+                noms.add(guanyador);
+                victòries.add(1);
+            }
+        }
+
+        System.out.println("\nVictòries per jugador:");
+        for (String jugador : jugadorsUnics) {
+            int index = noms.indexOf(jugador);
+            int numVictories = (index != -1) ? victòries.get(index) : 0;
+            System.out.println(jugador + ": " + numVictories);
+        }
+
+    }
+
+```
