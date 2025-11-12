@@ -37,6 +37,17 @@ Alguns detalls importants dels ArrayList:
 - Permeten accedir a elements específics mitjançant un índex que comença en 0.
 - Poden inserir, eliminar, buscar elements de manera eficient.
 - L'accés i recorregut és molt ràpid, ja que estan basats en arrays redimensionables.
+  
+## Operacions bàsiques (aplicables a qualsevol llenguatge)
+
+| Operació | Descripció | Equivalent en altres llenguatges |
+|-----------|-------------|-----------------------------------|
+| **add / append / insert** | Afig un element al final o en una posició concreta | `append()` / `add()` / `insert()` |
+| **get / access / index** | Accedeix a un element pel seu índex | `lista[i]` / `get(i)` |
+| **set / update** | Canvia el valor d’un element existent | `lista[i] = valor` / `set(i, valor)` |
+| **remove / delete** | Lleva un element de la llista | `remove(i)` / `pop(i)` / `del lista[i]` |
+| **size / length** | Retorna el nombre d’elements | `len()` / `size()` / `length` |
+
 
 1. Declarar i inicialitzar un ArrayList:
 
