@@ -34,6 +34,7 @@ export default ({
               { text: '7. ArrayList', link: '/7-arraylist' },
               { text: '💡Ejemplos', link: '/8-exemples' },
               { text: '✏️Ejercicios', link: '/9-exercicis' },
+               { text: '✅Solucions', link: '/13-solucions' }
             ]}
           ]
       }
@@ -60,6 +61,7 @@ export default ({
                { text: '7. ArrayList', link: '/ca/7-arraylist' },
               { text: '💡Exemples', link: '/ca/8-exemples' },
               { text: '✏️Exercicis', link: '/ca/9-exercicis' },
+               { text: '✅Solucions', link: '/ca/13-solucions' }
             ]}
           ]
       }
@@ -83,6 +85,7 @@ export default ({
           { text: '7. ArrayList', link: '/7-arraylist' },
           { text: '💡Ejemplos', link: '/8-exemples' },
           { text: '✏️Ejercicios', link: '/9-exercicis' },
+           { text: '✅Solucions', link: '/13-solucions' }
         ]},
         { text: '📚 Contenidos adicionales', items: [          
           { text: "La clase Arrays", link: '/10-classe_arrays' },
@@ -103,6 +106,7 @@ export default ({
           { text: '7. ArrayList', link: '/ca/7-arraylist' },
           { text: '💡Exemples', link: '/ca/8-exemples' },
           { text: '✏️Exercicis', link: '/ca/9-exercicis' },
+           { text: '✅Solucions', link: '/ca/13-solucions' }
         ]},
         { text: '📚 Continguts addicionals', items: [          
           { text: "La classe Arrays", link: '/ca/10-classe_arrays' },
