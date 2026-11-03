@@ -1,7 +1,10 @@
-# Aviso de traducción
+# 2. Propiedades
 
-::: warning Aviso de traducción
-Estamos trabajando para ofrecer la versión en español con el nivel y la calidad que os merecéis. Este módulo fue impartido originalmente en valenciano en el centro docente y lo estamos adaptando progresivamente. Gracias por tu paciencia.
-:::
+Algunas propiedades de los vectores son:
 
-<a href="/UD5_1/ca/index" style="display:inline-block;padding:0.4em 0.8em;border-radius:6px;background:#3e63dd;color:white;text-decoration:none;margin:4px 0;">Ver contenido en valenciano →</a>
+- Los vectores se utilizan como contenedores para almacenar datos relacionados (en lugar de declarar variables por separado para cada uno de los elementos del vector).
+- Todos los datos incluidos en el vector son del mismo tipo. Se pueden crear vectores de enteros o vectores de reales, pero en un mismo vector no se pueden mezclar tipos de datos (enteros y reales).
+- El tamaño del vector se establece cuando se crea (con el operador `new`, igual que cualquier otro objeto).
+- Se accederá a los elementos del vector a través de la posición que ocupan dentro del conjunto de elementos del vector.
+- El término «vector» normalmente hace referencia a aquellos que son unidimensionales.
+- Los vectores bidimensionales se conocen con el nombre de matrices.

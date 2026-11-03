@@ -8,11 +8,11 @@ Crear i carregar un array.
 == Java
 
 ```java
-package curs.UF05exemples;
+package curs.UF04exemples;
 /**
-* UF05 Exemple 1: Crear un array
+* UF04 Exemple 1: Crear un array
 */
-public class UF05Exemple01 {
+public class UF04Exemple01 {
     public static void main(String[] args) {
         // Declaració de l'array
         int n[] = new int[4];
@@ -41,12 +41,12 @@ Mostrar el contingut de la posició del vector que demane l'usuari.
 == Java
 
 ```java
-package curs.UF05exemples;
+package curs.UF04exemples;
 import java.util.Scanner;
 /**
 * Mostrar el contingut de la posició del vector que demane l'usuari.
 */
-public class UF05Exemple02 {
+public class UF04Exemple02 {
     public static void main(String[] args) {
 
         // Declaració de variables i carrega de dades en l'array
@@ -77,12 +77,12 @@ Carregar un array amb valors demanats per pantalla.
 == Java
 
 ```java
-package curs.UF05exemples;
+package curs.UF04exemples;
 import java.util.Scanner;
 /**
-* UF05 Exemple 3: Carregar un array amb valors demanats per pantalla.
+* UF04 Exemple 3: Carregar un array amb valors demanats per pantalla.
 */
-public class UF05Exemple03 {
+public class UF04Exemple03 {
     public static void main (String[] args) {
 
         // Declaració de variables
@@ -119,11 +119,11 @@ Recórrer un array i mostrar la mitjana.
 == Java
 
 ```java
-package curs.UF05exemples;
+package curs.UF04exemples;
 /**
-* UF05 Exemeple 4: Recórrer un array i mostrar la mitjana.
+* UF04 Exemeple 4: Recórrer un array i mostrar la mitjana.
 */
-public class UF05Exemple04 {
+public class UF04Exemple04 {
     public static void main(String[] args) {
         // Declarem variables i carreguem vector
         int i;
@@ -151,13 +151,13 @@ A partir de les notes dels estudiants d'una aula, genereu un gràfic de barres (
 == Java
 
 ```java
-package curs.UF05exemples;
+package curs.UF04exemples;
 /**
-* UF05 Exemple 5: A partir de les notes dels estudiants d'una aula, genereu un gràfic de 
+* UF04 Exemple 5: A partir de les notes dels estudiants d'una aula, genereu un gràfic de 
 barres (o histograma)
 * on s'indique el nombre d'estudiants que han tret suspès, aprovat, notable o excel·lent.
 */
-public class UF05Exemple05 {
+public class UF04Exemple05 {
     public static void main (String[] args) {
         // Declaració de variables
         int i, j;
@@ -216,11 +216,11 @@ Mostrar una taula bidimensional (matriu 5x4) de notes.
 == Java
 
 ```java
-package curs.UF05exemples;
+package curs.UF04exemples;
 /**
-* UF05 Exemple 6. Mostrar una taula bidimensional de notes
+* UF04 Exemple 6. Mostrar una taula bidimensional de notes
 */
-public class UF05Exemple06 {
+public class UF04Exemple06 {
     public static void main (String[] args) {
         // Inicialització de la matriu de notes
         float[][] vectorNotes = {
@@ -252,13 +252,13 @@ Cerca en una frase introduïda per teclat de la primera i última aparició d'un
 == Java
 
 ```java
-package curs.UF05exemples;
+package curs.UF04exemples;
 import java.util.Scanner;
 /**
-* UF05 Exemeple 07: Cerca en una frase introduïda per teclat de la primera i última 
+* UF04 Exemeple 07: Cerca en una frase introduïda per teclat de la primera i última 
 aparició d'un caràcter indicat per l'usuari.
 */
-public class UF05Exemple07 {
+public class UF04Exemple07 {
     public static void main(String[] args) { 
         // Declaració de variables
         String text, charText;
@@ -298,12 +298,12 @@ Cerca seqüencial
 == Java
 
 ```java
-package curs.UF05exemples;
+package curs.UF04exemples;
 import java.util.Scanner;
 /**
-* UF05 Exemple 8: Cerca seqüencial
+* UF04 Exemple 8: Cerca seqüencial
 */
-public class UF05Exemple08 {
+public class UF04Exemple08 {
     public static void main (String[] args){
         int vector[] = {5, 7, 9, 3, 2, 8, 10, 1, 0, 5, 7};
         int numero, i;
@@ -334,13 +334,13 @@ Cerca dicotòmica o binaria per programa.
 == Java
 
 ```java
-package curs.UF05exemples;
+package curs.UF04exemples;
 import java.util.Scanner;
 import java.util.Arrays;
 /**
-* UF05 Exemple 09: Cerca dicotòmica o binària per programa
+* UF04 Exemple 09: Cerca dicotòmica o binària per programa
 */
-public class UF05Exemple09 {
+public class UF04Exemple09 {
     public static void main (String[] args){
 
         int vector[] = {5, 7, 9, 3, 2, 8, 10, 1, 0, 5, 7};
@@ -392,14 +392,14 @@ Cerca dicotòmica o binaria utilitzant la funció binarySearch. Inclou exemple d
 == Java
 
 ```java
-package curs.UF05exemples;
+package curs.UF04exemples;
 import java.util.Scanner;
 import java.util.Arrays;
 /**
 * Cerca dicotòmica o binaria utilitzant la funció binarySearch.
 * Inclou exemple de l'ús de la funció arraycopy.
 */
-public class UF05Exemple10 {
+public class UF04Exemple10 {
     public static void main (String[] args){
         int vector1[] = {5, 7, 9, 3, 2, 8, 10, 1, 0, 5, 7};
         int vector2[] = new int[vector1.length];

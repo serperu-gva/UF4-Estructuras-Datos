@@ -1,4 +1,4 @@
-# UF05. Estructures de Dades Dinàmiques I
+# UF04. Estructures de Dades Dinàmiques I
 
 ::: tip Informació del curs
 **Autors:** Guillermo Garrido Portes / David Tur Sanmateu
