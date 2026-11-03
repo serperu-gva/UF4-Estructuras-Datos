@@ -33,8 +33,7 @@ export default ({
               { text: '6. Ordenación de vectores', link: '/6-ordenar' },
               { text: '7. ArrayList', link: '/7-arraylist' },
               { text: '💡Ejemplos', link: '/8-exemples' },
-              { text: '✏️Ejercicios', link: '/9-exercicis' },
-              { text: '✅Solucions', link: '/13-solucions' }
+              { text: '✏️Ejercicios', link: '/9-exercicis' }
             ]}
           ]
       }
@@ -57,8 +56,7 @@ export default ({
           { text: '6. Ordenación de vectores', link: '/6-ordenar' },
           { text: '7. ArrayList', link: '/7-arraylist' },
           { text: '💡Ejemplos', link: '/8-exemples' },
-          { text: '✏️Ejercicios', link: '/9-exercicis' },
-          { text: '✅Solucions', link: '/13-solucions' }
+          { text: '✏️Ejercicios', link: '/9-exercicis' }
         ]},
         { text: '📚 Contenidos adicionales', items: [          
           { text: "La clase Arrays", link: '/10-classe_arrays' },
